@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <main>
-    <div class=" bg-black flex flex-col h-screen ">
+  <main class=" bg-black h-[93.2vh]">
+    <div class="flex flex-col ">
       <p class="text-center mt-20 text-yellow-100 text-4xl font-semibold">Login Page!</p>
       <div class="p-8 mx-96 flex flex-col justify-evenly mt-20">
         <div class="flex flex-row font-bold justify-evenly mb-5 ">
