@@ -13,6 +13,8 @@ watch(
       buttonText.value = 'Sign Up';
     } else if (to === '/signup') {
       buttonText.value = 'Login';
+    } else if (to === "/") {
+      buttonText.value = "dashboard"
     }
   },
   { immediate: true }
@@ -23,7 +25,9 @@ watch(
 <template>
   <header>
     <div class="wrapper ">
-      <nav class=" bg-black text-yellow-200 flex flex-row-reverse">
+
+      <nav v-if="buttonText !== 'dashboard'" class=" bg-black text-yellow-200 flex flex-row-reverse">
+
         <RouterLink class="me-6 mt-6 bg-orange-950 px-4 py-1 rounded-lg"
           :to="buttonText === 'Login' ? '/login' : '/signup'">{{ buttonText }}</RouterLink>
       </nav>
