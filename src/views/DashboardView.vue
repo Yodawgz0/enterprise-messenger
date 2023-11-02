@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 library.add(faPaperPlane)
 
-
+const dataChat: { [key: string]: string }[] = [{ p1: "Asdhley" }, { p1: "Asdhley" }, { p2: "Asdhley" }]
 </script>
 
 <template>
