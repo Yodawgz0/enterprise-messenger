@@ -42,7 +42,7 @@ function addChatMessage() {
           </div>
         </div>
         <hr class="border-2 w-[80vw] border-white" />
-        <input v-model="chatInput" class="mx-3 my-4 w-[70vw] rounded outline-none p-2" />
+        <input @keyup.enter="addChatMessage" v-model="chatInput" class="mx-3 my-4 w-[70vw] rounded outline-none p-2" />
         <font-awesome-icon @click="addChatMessage" class="text-white w-6 h-6 pt-7 ms-5 cursor-pointer"
           icon="paper-plane" />
       </div>
