@@ -21,11 +21,13 @@ function addChatMessage() {
     <p class="text-white text-center font-bold pt-4 text-2xl">EnChat</p>
     <hr class="border-yellow-600 mt-4" />
     <div class="flex flex-row">
-      <div class="w-[20vw] border-2 border-black border-r-yellow-600 h-[90vh]">
-        <div>
-          <p class="text-white text-center p-3">
-            Online Users
-          </p>
+      <div class="w-[20vw] border-2 border-black border-r-yellow-600 h-[90vh] relative">
+        <div
+          class="before:absolute before:content-[''] before:h-2 before:w-2 before:bg-green-400 before:rounded-full translate-x-24 translate-y-5">
+        </div>
+        <p class="text-white text-center p-3 pl-8 relative">
+          Online Users
+        </p>
         </div>
       </div>
       <div>
