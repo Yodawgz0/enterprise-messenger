@@ -3,10 +3,9 @@ import { ref, type Ref } from 'vue';
 import axios from "axios";
 import router from '@/router';
 import type { user } from './Props';
+
 const userName: Ref<string> = ref("")
 const password: Ref<string> = ref("")
-
-
 
 const loginHandler = () => {
   const userDetails: user = {
@@ -25,7 +24,6 @@ const loginHandler = () => {
       alert(error);
       console.log(error);
     });
-
 }
 </script>
 
