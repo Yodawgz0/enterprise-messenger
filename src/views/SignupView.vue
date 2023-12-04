@@ -21,8 +21,10 @@ const loginHandler = () => {
       router.push("/login");
     })
     .catch(function (error) {
-      alert(error);
-      console.log(error);
+      if (error.response!.status === 409) {
+        alert(error.response.data.message)
+        router.push("/login");
+      }
     });
 }
 </script>
