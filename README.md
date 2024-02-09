@@ -1,5 +1,8 @@
 # enterprise-messenger
 
+
+not much happening
+
 This is the frontend of the messenger
 its in vuejs ... its a long journey i feel
 This template should help get you started developing with Vue 3 in Vite.
